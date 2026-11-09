@@ -19,8 +19,7 @@ The dataset is stored in `data/mobile_price.csv`.
 
 - 2,000 rows  
 - 20 input features  
-- 1 target column: `price_range`  
-- The target column is already present in the supplied CSV.  
+- 1 target column: `price_range`    
 - Five missing values are present in the feature columns. They are filled using the median of the training data.
 
 
@@ -34,8 +33,8 @@ Mobile_Price_Logistic_Regression/
 │   └── mobile_price.csv
 │
 ├── src/
-│   ├── 01_data_exploration.ipynb
-│   └── 02_data_preprocessing_training_evaluation.ipynb
+│   ├── data_exploration.ipynb
+│   └── data_preprocessing_training_evaluation.ipynb
 │
 ├── README.md
 └── requirements.txt
@@ -49,37 +48,6 @@ Mobile_Price_Logistic_Regression/
 - **Seaborn:** create the confusion matrix heatmap  
 - **Scikit-learn:** split data, scale features, train Logistic Regression and evaluate predictions
 
-## 5\. How to run the project
-
-### Step 1: Open the project folder
-
-Open this folder in VS Code.
-
-### Step 2: Install the required libraries
-
-Open the VS Code terminal and run:
-
-```sh
-pip install -r requirements.txt
-```
-
-### Step 3: Explore the dataset
-
-Run:
-
-```sh
-python src/01_data_exploration.py
-```
-
-This displays the dataset information, missing values, target distribution, summary statistics and graphs.
-
-### Step 4: Train and evaluate the model
-
-Run:
-
-```sh
-python src/02_model_training_evaluation.py
-```
 
 This program:
 
@@ -142,7 +110,6 @@ The project calculates:
 - **Classification report:** shows precision, recall, F1-score and support for every class.  
 - **Confusion matrix:** compares actual classes (rows) with predicted classes (columns).
 
-For this four-class problem, each class is evaluated against the other three classes. Therefore, the binary TN/FP/FN/TP layout does not directly describe the entire 4 × 4 confusion matrix.
 
 The program reports **macro average** and **weighted average**:
 
