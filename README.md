@@ -34,8 +34,8 @@ Mobile_Price_Logistic_Regression/
 │   └── mobile_price.csv
 │
 ├── src/
-│   ├── 01_data_exploration.py
-│   └── 02_model_training_evaluation.py
+│   ├── 01_data_exploration.ipynb
+│   └── 02_data_preprocessing_training_evaluation.ipynb
 │
 ├── README.md
 └── requirements.txt
