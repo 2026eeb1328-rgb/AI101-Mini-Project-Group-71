@@ -2,7 +2,7 @@
 
 ## 1\. Project objective
 
-This project uses **Logistic Regression** to classify a mobile phone into one of four price categories using its specifications.
+This project uses **Multiclass logistic Regression** to classify a mobile phone into one of four price categories using its specifications.
 
 | `price_range` | Category |
 | :---- | :---- |
@@ -23,7 +23,7 @@ The dataset is stored in `data/mobile_price.csv`.
 - The target column is already present in the supplied CSV.  
 - Five missing values are present in the feature columns. They are filled using the median of the training data.
 
-The `id` column is not present in this dataset, so no ID column needs to be removed.
+
 
 ## 3\. Project folder structure
 
@@ -36,9 +36,6 @@ Mobile_Price_Logistic_Regression/
 ├── src/
 │   ├── 01_data_exploration.py
 │   └── 02_model_training_evaluation.py
-│
-├── outputs/
-│   └── (graphs are saved here when the programs run)
 │
 ├── README.md
 └── requirements.txt
@@ -94,7 +91,7 @@ This program:
 6. Trains a multiclass Logistic Regression model.  
 7. Predicts the classes for the test data.  
 8. Calculates evaluation metrics and displays a confusion matrix.  
-9. Saves the confusion matrix graph in the `outputs` folder.
+
 
 ## 6\. Understanding the model
 
@@ -152,8 +149,3 @@ The program reports **macro average** and **weighted average**:
 - Macro average gives each class equal importance.  
 - Weighted average accounts for the number of test examples in each class.
 
-## 8\. Important note
-
-This project uses only Logistic Regression as the classification algorithm. No SVM, KNN, neural network or advanced model is used.
-
-The test accuracy is an estimate of performance on unseen data. It is not a guarantee that every real-world phone will be classified correctly.
