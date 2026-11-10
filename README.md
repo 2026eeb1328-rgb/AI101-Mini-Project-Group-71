@@ -123,5 +123,7 @@ The program reports **macro average** and **weighted average**:
 ![Actual vs Predicted Chart](actual-vs-predicted.jpeg)
 ![Prediction Output](prediction-output.jpeg)
 
+- **Slides:** [AI101 Group 71 Presentation](AI101-Group-71-Mobile-Price-Prediction.pptx)
+
 
 
