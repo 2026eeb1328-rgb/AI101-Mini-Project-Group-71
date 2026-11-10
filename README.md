@@ -1,5 +1,6 @@
-# Mobile Price Classification Using Logistic Regression
 
+# Mobile Price Classification Using Logistic Regression
+![Project Screenshot](screenshot.jpeg)
 ## 1\. Project objective
 
 This project uses **Multiclass logistic Regression** to classify a mobile phone into one of four price categories using its specifications.
