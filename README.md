@@ -117,7 +117,11 @@ The program reports **macro average** and **weighted average**:
 - Macro average gives each class equal importance.  
 - Weighted average accounts for the number of test examples in each class.
 
-- ##Results
+
+ # Results
 
 ![Actual vs Predicted Chart](actual-vs-predicted.jpeg)
+![Prediction Output](prediction-output.jpeg)
+
+
 
