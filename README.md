@@ -1,5 +1,9 @@
 # Mobile Price Classification Using Logistic Regression
-
+## Important Links :
+1. Repository link : 
+1. Dataset Source : https://github.com/arpita-maji/Mobile-Price-Classification/blob/master/mobile_price_range_data.csv
+2. Video link : (youtube link) https://youtu.be/rlJhewVyLwg?si=QPAkMuMRbkrGE8Bj | drive link(in case there is any problem with youtube link) : https://drive.google.com/file/d/1hBF-0pv2UuPBJkrz_nN5fwh2sWEStzCy/view?usp=drive_link
+3. PPT link : 
 ## 1\. Project objective
 
 This project uses **Multiclass logistic Regression** to classify a mobile phone into one of four price categories using its specifications.
@@ -13,7 +17,16 @@ This project uses **Multiclass logistic Regression** to classify a mobile phone 
 
 This is a **multiclass classification** problem because the target has four possible classes.
 
-## 2\. Dataset
+## 2\. Team and Member Roles Group 71
+| Member | Entry No. |   Name  | Role |
+| :---- | :---- |:----|:----|
+| 1 | 2026EEB1328| ASHISH KUMAR | **Executive Lead**. Oversaw the entire project and made sure that we strictly follow the guidelines mentioned in the mini-project briefing , done data exploration as well as reviewed code of each member, assigned tasks, and ensured that every part of the project is completed on time. Also supervised the technical works such as maintaining the repository, executing git commands and resolving conflicts, reviewed the overall progress, made sure that coding, documentation, presentation, and video work are properly integrated. Ensured the successful completion of project |
+| 2 | 2026AIB1038 | GAVINI JITESH YADAV | **PPT lead**. Prepared the PPT, Actively worked on evaluating the trained machine learning model by examining its predictions and interpreting the output to understand how effectively it classified  phones into their respective price categories based on their specifications. Analysed the predicted price categories, organized the results, and presented the model's outputs in an understandable and meaningful format using appropriate visual representations. Additionally, contributed to improving the quality, readability, and maintainability of the project's source code, particularly in the data exploration and data preprocessing sections. Added meaningful comments and explanations to important code segments to clarify their functionality and improve understanding for other team members and future users.
+| 3 | 2026EEB1381 | MRINALIKA SINGH | **Video lead**. Planned the video such that each one of us gets sufficient time to explain our part in project, while strictly following the time limit given to us. Done the processing of video and uploaded it on YouTube for easy access. Started preprocessing of data for training our model. Imported the libraries { Numpy and pandas for data processing, matplotlib and seaborn for graphical visualisation and required  sklearn learn modules for model evaluation |
+| 4 | 2026MCB1547 | MEENAKSHI | **Documentation lead**. Maintained the README, ensured that it contains every important information as mentioned in the mini project briefing. Handled the missing values in the training and testing samples by filling it with the median of the data. Using StandardScalar scaled the feature values so that their contribution in the model training is optimised. Using logistic regression from the sklearn trained the model on the training data which comprises 80% of our dataset |
+
+
+## 3\. Dataset
 
 The dataset is stored in `data/mobile_price.csv`.
 
@@ -27,8 +40,11 @@ The dataset is stored in `data/mobile_price.csv`.
 ## 3\. Project folder structure
 
 ```
-Mobile_Price_Logistic_Regression/
+AI101-Mini-Project-Group-71/
 │
+|── PPT
+|    └── AI101_Group71_Presentation_Final_updated.pptx  
+|
 ├── data/
 │   └── mobile_price.csv
 │
@@ -38,6 +54,7 @@ Mobile_Price_Logistic_Regression/
 │
 ├── README.md
 └── requirements.txt
+└── .gitignore
 ```
 
 ## 4\. Libraries used
@@ -48,6 +65,30 @@ Mobile_Price_Logistic_Regression/
 - **Seaborn:** create the confusion matrix heatmap  
 - **Scikit-learn:** split data, scale features, train Logistic Regression and evaluate predictions
 
+## 5. How to run the project
+
+### Step 1 : Clone the Repository
+1. Copy the link of the repository which we have submitted in the google form.
+2. Open the folder in your desktop where you want to clone the repository.
+3. Press 'Shift+ right click' and open gitbash terminal within that folder.
+4. Write the command ``` git clone [repo link] ``` press enter
+5. Repository in cloned sucessfully.
+
+### Step 2: Open the repository in VS code and Install the required libraries (if not already installed)
+In the VS code terminal run :
+```bash
+pip install -r requirements.txt
+```
+
+### Step 3: Explore the dataset
+
+Open the data_exploration.ipynb , select the python kernel and run the cells(you can run all cells at once or run cells one by one.
+
+This displays the dataset information, missing values, target distribution, summary statistics and graphs.
+
+### Step 4: Train and evaluate the model
+
+Similarly open the data_preprocessing_training_evaluation.ipynb and check the preprocessing of the data, training and model evaluation
 
 This program:
 
@@ -58,7 +99,10 @@ This program:
 5. Scales the features using `StandardScaler`.  
 6. Trains a multiclass Logistic Regression model.  
 7. Predicts the classes for the test data.  
-8. Calculates evaluation metrics and displays a confusion matrix.  
+8. Calculates evaluation metrics and displays a confusion matrix.
+
+
+
 
 
 ## 6\. Understanding the model
@@ -109,7 +153,6 @@ The project calculates:
 - **F1-score:** harmonic mean of precision and recall.  
 - **Classification report:** shows precision, recall, F1-score and support for every class.  
 - **Confusion matrix:** compares actual classes (rows) with predicted classes (columns).
-
 
 The program reports **macro average** and **weighted average**:
 
