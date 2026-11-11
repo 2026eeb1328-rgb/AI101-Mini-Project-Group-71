@@ -37,13 +37,18 @@ The dataset is stored in `data/mobile_price.csv`.
 
 
 
-## 3\. Project folder structure
+## 4\. Project folder structure
 
 ```
 AI101-Mini-Project-Group-71/
 │
 |── PPT
 |    └── AI101_Group71_Presentation_Final_updated.pptx  
+|──Results
+|    ├──Actual vs predicted bar graph.png
+|    └──confusion matrix.png
+|    └── model evaluation.png
+|    └──testing model on unseen data.png  
 |
 ├── data/
 │   └── mobile_price.csv
@@ -57,7 +62,7 @@ AI101-Mini-Project-Group-71/
 └── .gitignore
 ```
 
-## 4\. Libraries used
+## 5\. Libraries used
 
 - **Pandas:** read and explore the dataset  
 - **NumPy:** numerical operations  
@@ -65,7 +70,7 @@ AI101-Mini-Project-Group-71/
 - **Seaborn:** create the confusion matrix heatmap  
 - **Scikit-learn:** split data, scale features, train Logistic Regression and evaluate predictions
 
-## 5. How to run the project
+## 6\. How to run the project
 
 ### Step 1 : Clone the Repository
 1. Copy the link of the repository which we have submitted in the google form.
@@ -105,7 +110,7 @@ This program:
 
 
 
-## 6\. Understanding the model
+## 7\. Understanding the model
 
 ### Features (`X`)
 
@@ -143,7 +148,7 @@ The median of each feature is calculated from the training data and used to fill
 
 `LogisticRegression(max_iter=1000)` learns to assign each phone to one of the four classes. The model predicts the class with the highest estimated probability.
 
-## 7\. Model evaluation
+## 8\. Model evaluation
 
 The project calculates:
 
@@ -164,4 +169,11 @@ The program reports **macro average** and **weighted average**:
 ![Testing Model on unseen data](./Results/testing%20model%20%20on%20%20unseen%20data.png)
 ![Confusion Matrix](./Results/confusion%20matrix.png)
 ![Model Evaluation](./Results/model%20evaluation.png)
+
+
+## 9\ AI disclosure
+We have used AI (chatgpt) for the following purposes in our project :-
+1. To learn to use git commands and maintain repository structure.
+2. To understand and write code.
+3. We also used AI for making our ppt clean and organised.
 
