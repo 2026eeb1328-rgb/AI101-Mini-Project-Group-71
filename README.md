@@ -1,9 +1,9 @@
 # Mobile Price Classification Using Logistic Regression
 ## Important Links :
-1. Repository link : 
+1. Repository link : https://github.com/2026eeb1328-rgb/AI101-Mini-Project-Group-71.git
 1. Dataset Source : https://github.com/arpita-maji/Mobile-Price-Classification/blob/master/mobile_price_range_data.csv
 2. Video link : (youtube link) https://youtu.be/rlJhewVyLwg?si=QPAkMuMRbkrGE8Bj | drive link(in case there is any problem with youtube link) : https://drive.google.com/file/d/1hBF-0pv2UuPBJkrz_nN5fwh2sWEStzCy/view?usp=drive_link
-3. PPT link : 
+3. PPT link : https://docs.google.com/presentation/d/1isMnUJJ2SkcGzbDj6XSs7yZlxzV1RfrK/edit?usp=sharing&ouid=118261284498447576436&rtpof=true&sd=true
 ## 1\. Project objective
 
 This project uses **Multiclass logistic Regression** to classify a mobile phone into one of four price categories using its specifications.
@@ -158,4 +158,10 @@ The program reports **macro average** and **weighted average**:
 
 - Macro average gives each class equal importance.  
 - Weighted average accounts for the number of test examples in each class.
+
+## Result (screenshots)
+![Actual vs Predictred Bar Graph](./Results/Actual%20vs%20predicted%20bar%20graph.png)
+![Testing Model on unseen data](./Results/testing%20model%20%20on%20%20unseen%20data.png)
+![Confusion Matrix](./Results/confusion%20matrix.png)
+![Model Evaluation](./Results/model%20evaluation.png)
 
